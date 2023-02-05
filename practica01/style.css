@@ -2,3 +2,47 @@
 /* Nombre Práctica: Hola Mundo */
 /* Autor: Juan Ernesto Diaz Osuna */
 /* Fecha de elaboración: 2/5/2023 */
+
+.mx{
+    color: rgb(0, 153, 255);
+}
+
+.us{
+    color: rgb(182, 219, 35);
+}
+
+.jp{
+    color: rgb(236, 94, 179);
+}
+
+.it{
+    color: rgb(51, 212, 175);
+}
+
+.hw{
+    color: orange;
+}
+
+.ru{
+    color: blue;
+}
+
+.ko{
+    color: pink;
+}
+
+.po{
+    color: blueviolet;
+}
+
+.hi{
+    color: rgb(36, 219, 248);
+}
+
+.he{
+    color: rgb(51, 243, 195);
+}
+
+.sw{
+    color: rgb(145, 242, 0);
+}
