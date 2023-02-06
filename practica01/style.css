@@ -3,46 +3,93 @@
 /* Autor: Juan Ernesto Diaz Osuna */
 /* Fecha de elaboración: 2/5/2023 */
 
+h1{
+    position:absolute;
+    font-family: 'Exo 2', sans-serif;
+    -webkit-text-stroke: 2px;
+}
+
 .mx{
     color: rgb(0, 153, 255);
+    font-size: 185px;
+    margin-top: 150px;
+    margin-left: 400px;
 }
 
 .us{
     color: rgb(182, 219, 35);
+    font-size: 115px;
+    padding: 115px 110px;
 }
 
 .jp{
     color: rgb(236, 94, 179);
+    font-size: 55px;
+    margin-top: 170px;
+    margin-left: 600px;
+    font-weight: 100;
+    letter-spacing: 15px;
 }
 
 .it{
     color: rgb(51, 212, 175);
+    font-size: 85px;
+    margin-top: 70px;
+    margin-left: 740px;
+    letter-spacing: 8px;
 }
 
 .hw{
     color: orange;
+    font-size: 205px;
+    margin-top: 300px;
+    margin-left: 60px;
 }
 
 .ru{
     color: blue;
+    font-size: 70px;
+    margin-top: 120px;
+    margin-left: 210px;
+    font-weight: 500;
 }
 
 .ko{
     color: pink;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 640px;
+    font-weight: 100;
+    letter-spacing: 3px;
 }
 
 .po{
     color: blueviolet;
+    font-size: 150px;
+    margin-left: 30px;
+    padding: 160px 0px;
 }
 
 .hi{
     color: rgb(36, 219, 248);
+    font-size: 75px;
+    margin-top: 65px;
+    margin-left: 415px;
+    font-weight: 600;
 }
 
 .he{
     color: rgb(51, 243, 195);
+    font-size: 70px;
+    margin-top: 505px;
+    padding: 0 430px;
+    font-weight: 100;
 }
 
 .sw{
     color: rgb(145, 242, 0);
+    font-size: 70px;
+    margin-top: 435px;
+    margin-left: 640px;
+    font-weight: 500;
 }
