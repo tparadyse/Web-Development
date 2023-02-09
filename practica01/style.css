@@ -12,21 +12,22 @@ h1{
 .mx{
     color: rgb(0, 153, 255);
     font-size: 185px;
-    margin-top: 150px;
-    margin-left: 400px;
+    top: 50px;
+    left: 400px;
 }
 
 .us{
     color: rgb(182, 219, 35);
     font-size: 115px;
-    padding: 115px 110px;
+    top: 115px;
+    left: 110px;
 }
 
 .jp{
     color: rgb(236, 94, 179);
     font-size: 55px;
-    margin-top: 170px;
-    margin-left: 600px;
+    top: 130px;
+    left: 600px;
     font-weight: 100;
     letter-spacing: 15px;
 }
@@ -34,31 +35,31 @@ h1{
 .it{
     color: rgb(51, 212, 175);
     font-size: 85px;
-    margin-top: 70px;
-    margin-left: 740px;
+    top: 55px;
+    left: 710px;
     letter-spacing: 8px;
 }
 
 .hw{
     color: orange;
     font-size: 205px;
-    margin-top: 300px;
-    margin-left: 60px;
+    top: 180px;
+    left: 60px;
 }
 
 .ru{
     color: blue;
     font-size: 70px;
-    margin-top: 120px;
-    margin-left: 210px;
+    top: 80px;
+    left: 210px;
     font-weight: 500;
 }
 
 .ko{
     color: pink;
     font-size: 25px;
-    margin-top: 50px;
-    margin-left: 640px;
+    top: 30px;
+    left: 640px;
     font-weight: 100;
     letter-spacing: 3px;
 }
@@ -66,30 +67,31 @@ h1{
 .po{
     color: blueviolet;
     font-size: 150px;
-    margin-left: 30px;
-    padding: 160px 0px;
+    left: 30px;
+    top: 160px;
+    left: 0px;
 }
 
 .hi{
     color: rgb(36, 219, 248);
     font-size: 75px;
-    margin-top: 65px;
-    margin-left: 415px;
+    top: 15px;
+    left: 415px;
     font-weight: 600;
 }
 
 .he{
     color: rgb(51, 243, 195);
     font-size: 70px;
-    margin-top: 505px;
-    padding: 0 430px;
+    top: 505px;
+    left: 430px;
     font-weight: 100;
 }
 
 .sw{
     color: rgb(145, 242, 0);
     font-size: 70px;
-    margin-top: 435px;
-    margin-left: 640px;
+    top: 435px;
+    left: 640px;
     font-weight: 500;
 }
