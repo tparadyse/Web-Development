@@ -8,11 +8,6 @@ const List = () => {
             <h2 className="font-bold text-center">Administra Estudiantes</h2>
 
             <Students/>
-            <Students/>
-            <Students/>
-            <Students/>
-            <Students/>
-
 
 
         </div>
