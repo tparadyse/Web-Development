@@ -1,37 +1,68 @@
 import React from "react"
+import { useEffect } from "react";
 import { useState } from "react"
 
-const Form = ({estudiantes,setEstudiantes}) => {
-
-    
+const Form = ({estudiante,estudiantes,setEstudiantes}) => {
 
     const [nombre,setNombre] = useState('');
     const [matricula,setMatricula] = useState('');
     const [carrera,setCarrera] = useState('');
     const [semestre,setSemestre] = useState('');
     const [error,setError] = useState(false);
+    //const [actualizando, setActualizando] = useState(false);
+
+    useEffect(() => {
+        if(Object.keys(estudiante).length > 0){
+            setNombre(estudiante.nombre);
+            setCarrera(estudiante.carrera);
+            setMatricula(estudiante.matricula);
+            setSemestre(estudiante.semestre);
+            //setActualizando(true);
+        }else{
+            //setActualizando(false);
+        }
+        
+    }, [estudiante])
+    
+
+    const generarID = () => {
+        const fecha = Date.now().toString(36);
+        const random = Math.random().toString(36).substring(2);
+        return random + fecha;
+    }
 
     const manejadorSubmit = (e) => {
 
         e.preventDefault();
-        console.log('Enviando formulario...')
         if([nombre.trim(),matricula.trim(),carrera.trim(),semestre.trim()].includes('')){
-            console.log('Campos faltantes');
+            console.log('Existen campos faltantes');
             setError(true);
             return
         }
         setError(false);
-        
+
         const objetoEstudiante = {
             nombre,
             matricula,
             carrera,
             semestre
         }
-        setEstudiantes([...estudiantes,objetoEstudiante]);
+
+        if (estudiante.id){
+            objetoEstudiante.id = estudiante.id;
+            const estudianteActualizado = estudiantes.map(estudianteState => estudianteState.id === estudiante.id ? objetoEstudiante : estudianteState)
+            setEstudiantes(estudianteActualizado);
+            //setActualizando(false);
+            estudiante.id = "";
+        }else{
+            objetoEstudiante.id = generarID();
+            setEstudiantes([...estudiantes,objetoEstudiante]);
+        }
+        //agregarEstudiante(objetoEstudiante);
         limpiar();
-        
     }
+
+    // const
 
     const limpiar = () => {
         setNombre('');
@@ -63,9 +94,8 @@ const Form = ({estudiantes,setEstudiantes}) => {
                     <input type="text" placeholder="Semester" className="border-2 p-1 w-full rounded-md mb-2 text-black" value={semestre} onChange={(e) => setSemestre(e.target.value)}/>
                 </div>
                 <div>
-                    <input type="submit" className="w-full rounded-md p-2 uppercase bg-pink-800 hover:bg-gray-800 cursor-pointer" value='Agregar Estudiante'/>
+                    <input type="submit" className="w-full rounded-md p-2 uppercase bg-pink-800 hover:bg-gray-800 cursor-pointer" value={ estudiante.id ? 'Actualizar' : 'Agregar Estudiante'}/>
                 </div>
-                
             </form>
         </div>
         
@@ -73,3 +103,9 @@ const Form = ({estudiantes,setEstudiantes}) => {
 }
 
 export default Form
+
+/*     const agregarEstudiante = (nuevoEstudiante) => {
+        const estudiantesActualizados = [...estudiantes, nuevoEstudiante];
+        setEstudiantes(estudiantesActualizados);
+        localStorage.setItem("estudiantes", JSON.stringify(estudiantesActualizados));
+    }; */
