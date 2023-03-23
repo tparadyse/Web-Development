@@ -25,7 +25,7 @@ const Students = ({ estudiante, setEstudiante,manejadorEliminarEstudiante}) => {
         Semestre:{" "}
         <span className="font-normal ml-2 normal-case">{semestre}</span>
       </p>
-      <div className="flex justify-between mt-5 px-40">
+      <div className="flex justify-between mt-5 ">
         <button type="button" className="text-white bg-pink-700 hover:bg-gray-800 cursor-pointer rounded-md py-2 px-2" onClick={()=>manejadorEliminarEstudiante(estudiante.id)}>ELIMINAR</button>
         <button type="button" className="text-white bg-pink-700 hover:bg-gray-800 cursor-pointer rounded-md py-2 px-5" onClick={()=>setEstudiante(estudiante)}>EDITAR</button>
       </div>
